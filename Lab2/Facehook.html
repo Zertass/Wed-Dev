@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>it's realy facebook, trust me</title>
+        <style>
+            body{
+                line-height: 1.34;
+                margin: 0px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 12px;
+            }
+            h2{
+                margin: 0;
+            }
+            form{
+                margin: 0;
+                padding: 0;
+            }
+            a{
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .main_pg{
+                padding-bottom: 142px;
+                padding-top: 82px;
+                background: #f0f2f5;
+                padding-left: 40px;
+                padding-right: 40px;
+                max-width: 1500px;
+                margin: 0 auto;
+            }
+            .main_content{
+                margin: auto;
+                width: auto;
+                max-width: 980px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .left_main{
+                width: 580px;
+            }
+            .img{
+                height: 106px;
+                margin: -28px;
+            }
+            .right_main{
+                margin-left: -32px;
+                height: 496px;
+                width: 396px;
+            }
+            .card{
+                padding-bottom: 24px;
+                text-align: center;
+                padding-top: 10px;
+                align-items: center;
+                background-color: #fff;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+                box-sizing: border-box;
+                margin: 40px 0 0;
+                width: 396px;
+            }
+            .form_field{
+                display: inline-block;
+                margin: auto;
+                padding: 6px 0;
+                font-size: 17px;
+                width: 364px;
+            }
+            .input_field{
+                font-size: 17px;
+                padding: 14px 16px;
+                width: 330px;
+                border-radius: 6px;
+                background: #FFFFFF;
+                border: 1px solid #dddfe2;
+                color: #1d2129;
+                height: 22px;
+                line-height: 16px;
+                vertical-align: middle;
+                margin: 0;
+            }
+            .col_button{
+                padding-top: 6px;
+            }
+            #create_page{
+                border-top: none;
+                color: #1c1e21;
+                font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                padding-top: 0;
+                margin-top: 28px;
+                width: 396px;
+                text-align: center;
+            }
+            .footer_pg{
+                padding: 20px 40px;
+            }
+            .page_footer{
+                margin: auto;
+                width: auto;
+                color: #737373;
+                max-width: 980px;
+            }
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 8px 0 0 0;
+                line-height: 1.6;
+            }
+            .footer_list{
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .with_left_padd10{
+                padding-left: 10px;
+            }
+            .with_left_padd20{
+                padding-left: 20px;
+            }
+            .fake_button{
+                height: 18px;
+                line-height: 18px;
+                background-color: #f5f6f7;
+                border-color: #ccd0d5;
+                border: 1px solid;
+                border-radius: 2px;
+                font-size: 18px;
+                font-weight: bold;
+                justify-content: center;
+                padding: 0 8px;
+                position: relative;
+                text-align: center;
+                vertical-align: middle;
+            }
+            #logo{
+                padding: 112px 0 16px;
+            }
+            #some_text{
+                font-size: 28px;
+                line-height: 32px;
+                width: 500px;
+                font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                padding: 0 0 20px;
+                color: #1c1e21;
+            }
+            #content_curve{
+                border-bottom: 1px solid #dddfe2;
+                font-size: 1px;
+                height: 8px;
+                margin-bottom: 8px;
+            }
+            #neg_marg_left{
+                margin-top: -8px;
+                margin-left: -20px;
+            }
+            #copyright{
+                    margin: 20px 0 0 0;
+                    font-size: 11px;
+            }
+            .enter_button{
+                background-color: #1877f2;
+                border: none;
+                border-radius: 6px;
+                font-size: 20px;
+                line-height: 48px;
+                padding: 0 16px;
+                width: 332px;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+                white-space: nowrap;
+                box-sizing: content-box;
+                font-weight: bold;
+                position: relative;
+                text-align: center;
+                text-shadow: none;
+                vertical-align: middle;
+                margin: 0;
+                color: #fff;
+                transition-duration: 0.4s;
+            }
+            .enter_button:hover{
+                background-color: #106be1;
+            }
+            .forget_pass{
+                margin-top: 16px;
+            }
+            .forget_pass a{
+                color: #1877f2;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .line{
+                align-items: center;
+                border-bottom: 1px solid #dadde1;
+                display: flex;
+                margin: 20px 16px;
+            }
+            .new_acc_button{
+                border: none;
+                border-radius: 6px;
+                font-size: 17px;
+                line-height: 48px;
+                padding: 0 16px;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: #42b72a;
+                color: #fff;
+                box-sizing: content-box;
+                font-weight: bold;
+                position: relative;
+                text-align: center;
+                text-shadow: none;
+                vertical-align: middle;
+                transition-duration: 0.4s;
+            }
+            .new_acc_button:hover{
+                background-color: #3da229;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main_pg">
+            <div class="main_content">
+                <div class="left_main">
+                    <div id="logo">
+                        <img class="img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                    </div>
+                    <h2 id="some_text">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+                </div>
+                <div class="right_main">
+                    <div class="card">
+                        <form action="" method="post">
+                            <div>
+                                <div class="form_field">
+                                    <input type="text" class="input_field" name="email" placeholder="Электронный адрес или номер телефона" autofocus>
+                                </div>
+                                <div class="form_field">
+                                    <input type="password" class="input_field" name="pass" placeholder="Пароль">
+                                </div>
+                            </div>
+                            <div class="col_button">
+                                <button value="1" class="enter_button" name="login" type="submit">Вход</button>
+                            </div>
+                            <div class="forget_pass">
+                                <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc1NjEyNjY0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login">Забыли пароль?</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="col_button">
+                                <a role="button" class="new_acc_button" href="#">Создать новый аккаунт</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="create_page"><strong>Создать страницу</strong> знаменитости, музыкальной группы или компании.</div>
+                </div>
+            </div>
+        </div>
+        <div class = footer_pg>
+            <div class = page_footer>
+                <ul class="footer_list">
+                    <li>Русский</li>
+                    <li class="with_left_padd10">English(US)</li>
+                    <li class="with_left_padd10">Türkçe</li>
+                    <li class="with_left_padd10">Bahasa Indonesia</li>
+                    <li class="with_left_padd10">中文(简体)</li>
+                    <li class="with_left_padd10">Қазақша</li>
+                    <li class="with_left_padd10">Deutsch</li>
+                    <li class="with_left_padd10">한국어</li>
+                    <li class="with_left_padd10">Shqip</li>
+                    <li class="with_left_padd10">Español</li>
+                    <li class="with_left_padd10">Português (Brasil)</li>
+                    <li class="with_left_padd10">Deutsch</li>
+                    <li class="with_left_padd10"><span class="fake_button">+</span></li>
+                </ul>
+                <div id="content_curve"></div>
+                <ul class="footer_list" id="neg_marg_left">
+                    <li class="with_left_padd20">Регистрация</li>
+                    <li class="with_left_padd20">Вход</li>
+                    <li class="with_left_padd20">Messenger</li>
+                    <li class="with_left_padd20">Facebook Lite</li>
+                    <li class="with_left_padd20">Watch</li>
+                    <li class="with_left_padd20">Места</li>
+                    <li class="with_left_padd20">Игры</li>
+                    <li class="with_left_padd20">Marketplace</li>
+                    <li class="with_left_padd20">Meta Pay</li>
+                    <li class="with_left_padd20">Oculus</li>
+                    <li class="with_left_padd20">Portal</li>
+                    <li class="with_left_padd20">Instagram</li>
+                    <li class="with_left_padd20">Bulletin</li>
+                    <li class="with_left_padd20">Благотворительные акции</li>
+                    <li class="with_left_padd20">Услуги</li>
+                    <li class="with_left_padd20">Центр информации о выборах</li>
+                    <li class="with_left_padd20">Политика конфиденциальности</li>
+                    <li class="with_left_padd20">Центр конфиденциальности</li>
+                    <li class="with_left_padd20">Группы</li>
+                    <li class="with_left_padd20">Информация</li>
+                    <li class="with_left_padd20">Создать рекламу</li>
+                    <li class="with_left_padd20">Создать страницу</li>
+                    <li class="with_left_padd20">Разработчикам</li>
+                    <li class="with_left_padd20">Вакансии</li>
+                    <li class="with_left_padd20">Файлы cookie</li>
+                    <li class="with_left_padd20">Рекламные предпочтения</li>
+                    <li class="with_left_padd20">Условия использования</li>
+                    <li class="with_left_padd20">Справка</li>
+                    <li class="with_left_padd20">Загрузка контактов и лица, не являющиеся пользователями</li>
+                </ul>
+                <div id="copyright"> Meta © 2023</div>
+            </div>
+        </div>
+    </body>
+</html>

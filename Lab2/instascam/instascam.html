@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>not a scam</title>
+        <style>
+            body{
+                background-color: #fafafa;
+                color: #262626;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 0;
+            }
+            main{
+                margin: 0;
+                padding: 0;
+            }
+            .main_part{
+                justify-content: center;
+                padding: 0 0 32px 0;
+                width: 100%;
+                margin-right: auto;
+                margin-top: 32px;
+                margin-bottom: 0;
+                margin-left: auto;
+                border: 0;
+                display: flex;
+                align-items: stretch;
+                flex-direction: row;
+                flex-grow: 1;
+            }
+            .phone{
+                background-size: 468.32px 634.15px;
+                height: 581.15px;
+                margin-bottom: 12px;
+                background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png);
+                align-self: center;
+                background-position: -46px 0;
+                margin-right: 32px;
+                flex-basis: 380.32px;
+            }
+
+            .screen{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                position: relative;
+                margin-left: 113px;
+                margin-top: 27px;
+                border: 0;
+                padding: 0;
+            }
+            .screenshot{
+                width: 250px;
+                height: 538.84px;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+            .im-1{
+                animation-name: fadeIm-1;
+                animation-duration: 30s;
+                animation-iteration-count: infinite; 
+            }
+            .im-2{
+                animation-name: fadeIm-2;
+                animation-duration: 30s;
+                animation-iteration-count: infinite; 
+            }
+            .im-3{
+                animation-name: fadeIm-3;
+                animation-duration: 30s;
+                animation-iteration-count: infinite; 
+            }
+            .im-4{
+                animation-name: fadeIm-4;
+                animation-duration: 30s;
+                animation-iteration-count: infinite; 
+            }
+            @keyframes fadeIm-1
+            {
+                from        { opacity: 1; }
+                10%      { opacity: 1; }
+                15%      { opacity: 0; }
+                50%      { opacity: 0; }
+                75%       { opacity: 0; }
+                90%      { opacity: 1; }
+                to          { opacity: 1; }
+            }
+            @keyframes fadeIm-2
+            {
+                from        { opacity: 0; }
+                10%      { opacity: 0; }
+                15%      { opacity: 1; }
+                25%      { opacity: 1; }
+                35%      { opacity: 1; }
+                40%      { opacity: 0; }
+                50%      { opacity: 0; }
+                to          { opacity: 0; }
+            }
+            @keyframes fadeIm-3
+            {
+                from        { opacity: 0; }
+                25%      { opacity: 0; }
+                35%      { opacity: 0; }
+                40%      { opacity: 1; }
+                50%      { opacity: 1; }
+                60%      { opacity: 1; }
+                65%      { opacity: 0; }
+                75%       { opacity: 0; }
+                to          { opacity: 0; }
+            }
+            @keyframes fadeIm-4
+            {
+                from        { opacity: 0; }
+                25%      { opacity: 0; }
+                50%      { opacity: 0; }
+                60%      { opacity: 0; }
+                65%      { opacity: 1; }
+                75%       { opacity: 1; }
+                85%      { opacity: 1; }
+                90%      { opacity: 0; }
+                to          { opacity: 0; }
+            }
+            .right_side{
+                color: #262626;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 12px;
+                max-width: 350px;
+            }
+            .card{
+                align-items: center;
+                background-color: rgb(255,255,255);
+                border: 1px solid rgb(219,219,219);
+                border-radius: 1px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                margin: 0 0 10px;
+                padding: 10px 0;
+                position: relative;
+            }
+            .logo{
+                margin-top: 36px;
+                margin-bottom: 12px;
+                flex: 0 0 auto;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-content: stretch;
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+            }
+            .reg_fields_and_buttons{
+                margin-bottom: 10px;
+                max-width: 350px;
+            }
+            .login_form{
+                border: 0;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+            }
+            .main_form_part{
+                margin-top: 24px;
+                flex: 0 0 auto;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: stretch;
+                align-content: stretch;
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+            }
+            .forgot_pass{
+                text-decoration: none;
+                color: rgb(0,55,107);
+                font-size: 12px;
+                line-height: 16px;
+                margin-top: 12px !important;
+                text-align: center !important;
+            }
+            .form_field{
+                margin: 0 40px 6px;
+                box-sizing: border-box;
+                border: 1px solid #dbdbdb;
+                font-size: 14px;
+                background-color: #fafafa;
+                border-radius: 3px;
+                width: 266.8px;
+                height: 36px;
+            }
+            .blue_button{
+                margin: 8px 40px;
+                flex: 0 0 auto;
+                justify-content: flex-start;
+                align-items: stretch;
+                flex-direction: column;
+                align-content: stretch;
+                display: flex;
+                box-sizing: border-box;
+                position: relative;
+            }
+            .bb{
+                background-color: #0095f6;
+                opacity: .7;
+                border: none;
+                border-radius: 8px;
+                color: #FFFFFF;
+                position: relative;
+                text-align: center; 
+                font-size: 14px;
+                font-weight: 600;
+                padding: 7px 16px;
+                width: auto;
+            }
+            .or{
+                margin: 10px 40px 18px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .cap_or{
+                margin: 0 18px;
+                color: #8e8e8e;
+                font-size: .8125rem;
+                font-weight: 600;
+                line-height: 1.1538;
+                text-transform: uppercase;
+            }
+            .line{
+                top: .45em;
+                height: 1.5px;
+                background-color: #dbdbdb;
+                flex-grow: 1;
+            }
+            label{
+                border: 0;
+                display: flex;
+                flex: 1 0 0px;
+                height: 34px;
+                margin: 0;
+                min-width: 0;
+                padding: 0;
+                position: relative;
+            }
+            .placeholder{
+                color: #a1a1a1;
+                font-size: 12px;
+                border: 0;
+                height: 36px;
+                left: 8px;
+                line-height: 36px;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                right: 0;
+                text-overflow: ellipsis;
+                transform-origin: left;
+                transition: transform ease-out .1s;
+                vertical-align: baseline;
+                white-space: nowrap;
+            }
+            .input_field{
+                font-size: 14px;
+                background: rgb(250,250,250);
+                border: 0;
+                flex: 1 0 auto;
+                margin: 0;
+                outline: none;
+                overflow: hidden;
+                padding: 20px 8px 7px 8px;
+                text-overflow: ellipsis;
+                color: #262626;
+                font-weight: normal;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                line-height: 16px;
+            }
+
+            input.if1:not(:placeholder-shown) + .ph1 {
+                transform: scale(0.83) translateY(-10px);
+            }
+            input.if2:not(:placeholder-shown) + .ph2 {
+                transform: scale(0.83) translateY(-10px);
+            }
+            .form_field:focus-within{
+                border: 1px solid #a8a8a8;
+            }
+            .fb_ent{
+                border: 0;
+                display: inline-block;
+                padding: 0;
+                position: relative;
+                text-align: center;
+                background: none;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 600;
+                text-overflow: ellipsis;
+                width: auto;
+                line-height: 18px;
+                margin: 0;
+            }
+            .fb_logo{
+                border: 0;
+                display: inline-block;
+                margin: 0;
+                margin-right: 8px;
+                padding: 0;
+                position: relative;
+                top: 3px;
+                /* vertical-align: baseline; */
+                background-repeat: no-repeat;
+                background-position: -414px -259px;
+                height: 16px;
+                width: 16px;
+                background-image: url(content/icons.png);
+            }
+            .down_arrow{
+                border: 0;
+                display: inline-block;
+                margin: 0;
+                margin-left: 1px;
+                margin-bottom: 3px;
+                padding: 0;
+                position: relative;
+                top: 3px;
+                background-repeat: no-repeat;
+                background-position: -359px -285px;
+                height: 12px;
+                width: 12px;
+                background-image: url(content/icons.png);
+            }
+            .fb_text{
+                color: #385185;
+            }
+            .sec_card{
+                display: block;
+                color: rgb(142,142,142);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                margin: -3px 0 -4px;
+            }
+            .sec_crd_txt{
+                color: #262626;
+                font-size: 14px;
+                margin: 15px;
+                text-align: center;
+            }
+            .reg_link{
+                color: rgb(0,149,246);
+                text-decoration: none;
+                background-color: transparent;
+                outline: none;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            .reg_link_text{
+                display: inline;
+                margin: 0;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+            }
+            .app_download{
+                display: flex;
+                flex-direction: column;
+            }
+            .dwnld_app{
+                margin: 10px 20px 10px 20px;
+                padding: 0;
+                text-align: center;
+            }
+            .dwnld_bttns{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 10px 0 10px 0;
+            }
+            .dwnld_ank{
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+                margin-right: 8px !important;
+                background-color: transparent;
+                border: 0;
+                outline: none;
+                color: #00376b;
+            }
+            footer{
+                padding: 0 16px;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                flex-shrink: 0;
+                align-items: stretch;
+                background-color: #fafafa;
+                border: 0;
+                margin: 0;
+            }
+            .footer{
+                margin-bottom: 52px;
+                display: flex;
+                flex: 0 0 auto;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: stretch;
+                align-content: stretch;
+            }
+            .ankers{
+                flex-wrap: wrap;
+                margin: 24px 0 0 0;
+                display: flex;
+                flex: 0 0 auto;
+                justify-content: center;
+                flex-direction: row;
+                align-items: stretch;
+                align-content: stretch;
+            }
+            .lang_and_security{
+                margin: 12px 0;
+                display: flex;
+                flex: 0 0 auto;
+                justify-content: center;
+                flex-direction: row;
+                align-items: stretch;
+                align-content: stretch;
+            }
+            .anker_elem{
+                margin: 0 8px 12px 8px;
+                box-sizing: border-box;
+            }
+            .anker_text{
+                font-size: 12px;
+                line-height: 16px;
+                margin: -2px 0 -3px;
+                font-weight: 400;
+                color: #8e8e8e;
+                display: block;
+            }
+            a{
+                text-decoration: none;
+            }
+            .security{
+                margin: -2px 0 -3px 16px;
+                color: #8e8e8e;
+                display: block;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+            }
+            .lang_sel{
+                display: block;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                margin: -2px 0 -3px;
+                color: #8e8e8e;
+                position: relative;
+            }
+            .select{
+                cursor: pointer;
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 12px;
+                background-color: #fff;
+                color: #1c1e21;
+                border: 1px solid #ccd0d5;
+                padding: 2px;
+                display: inline-block;
+            }
+            .cur_lang{
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            @media(max-width: 875px){
+                .phone{
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="main_part">
+                <div class="phone">
+                    <div class="screen">
+                        <img class="screenshot im-1" src="content/screenshot1.png" alt="pic1">
+                        <img class="screenshot im-2" src="content/screenshot2.png" alt="pic2">
+                        <img class="screenshot im-3" src="content/screenshot3.png" alt="pic3">
+                        <img class="screenshot im-4" src="content/screenshot4.png" alt="pic4">
+                    </div>
+                </div>
+                <div class="right_side">
+                    <div class="card">
+                        <div class="logo">
+                            <img src="content/logo.png" alt="instalogo" width="174" height="50">
+                        </div>
+                        <div class="reg_fields_and_buttons">
+                            <form class="login_form">
+                                <div class="main_form_part">
+                                    <div class="form_field">
+                                        <label>
+                                            <input maxlength="75" name="username" type="text" class="input_field if1" value="" placeholder="">
+                                            <span class="placeholder ph1">Телефон, имя пользователя или эл. адрес</span>
+                                        </label>
+                                    </div>
+                                    <div class="form_field">
+                                        <label>
+                                            <input maxlength="75" name="pass" type="text" class="input_field if2" value="" placeholder="">
+                                            <span class="placeholder ph2">Пароль</span>
+                                        </label>
+                                    </div>
+                                    <div class="blue_button">
+                                        <button class="bb" type="submit">
+                                            Войти
+                                        </button>
+                                    </div>
+                                    <div class="or">
+                                        <div class="line"></div>
+                                        <div class="cap_or">или</div>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="blue_button">
+                                        <button class="fb_ent">
+                                            <span class="fb_logo"></span>
+                                            <span class="fb_text">Войти через Facebook</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="forgot_pass" href="https://www.instagram.com/accounts/password/reset/">Забыли пароль?</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sec_card">
+                            <p class="sec_crd_txt">
+                                У вас еще нет аккаунта?
+                                <a class="reg_link" href="https://www.instagram.com/accounts/emailsignup/">
+                                    <span class="reg_link_text">
+                                        Зарегистрироваться
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="app_download">
+                        <div class="dwnld_app">
+                            <span class="dwnld_app_spn">
+                                Установите приложение.
+                            </span>
+                        </div>
+                        <div class="dwnld_bttns">
+                            <a class="dwnld_ank" href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D183F77A5-D15A-48D6-BD81-729052AA8C46%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank">
+                                <img alt="Скачать из Google Play" style="height: 40px; border: 0;" src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png">
+                            </a>
+                            <a class="dwnld_ank" href="ms-windows-store://pdp/?productid=9nblggh5l9xt&amp;referrer=appbadge&amp;source=www.instagram.com&amp;mode=mini&amp;pos=-4%2C-4%2C1927%2C1050" target="_blank">
+                                <img alt="Скачать из Google Play" style="height: 40px; border: 0;" src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="ankers">
+                        <div class="anker_elem">
+                            <a href="https://about.meta.com/" target="_blank">
+                                <div class="anker_text">Meta</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://about.instagram.com/" target="_blank">
+                                <div class="anker_text">Информация</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://about.instagram.com/blog/" target="_blank">
+                                <div class="anker_text">Блог</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://www.instagram.com/about/jobs/" target="_blank">
+                                <div class="anker_text">Вакансии</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://help.instagram.com/" target="_blank">
+                                <div class="anker_text">Помощь</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://developers.facebook.com/docs/instagram" target="_blank">
+                                <div class="anker_text">API</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://www.instagram.com/legal/privacy/" target="_blank">
+                                <div class="anker_text">Конфиденциальность</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://www.instagram.com/legal/terms/" target="_blank">
+                                <div class="anker_text">Условия</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://www.instagram.com/directory/profiles/" target="_blank">
+                                <div class="anker_text">Популярные аккаунты</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://www.instagram.com/explore/locations/" target="_blank">
+                                <div class="anker_text">Места</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://www.instagram.com/web/lite/" target="_blank">
+                                <div class="anker_text">Instagram Lite</div>
+                            </a>
+                        </div>
+                        <div class="anker_elem">
+                            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fhelp%2Finstagram%2F261704639352628&e=AT0GjztUwc8II3ur2J-fkPkF_0iQ227rx9LGmDYJtnfFL6udMMMwiEF4uh3e0JFKZJe80CUOiDJynu6iSiqUyeNWn4wCjquRVZA6wUPkcUphQBuOHigzTWMeTvww5If5CE-b9mspZacctsGTQCGlww" target="_blank">
+                                <div class="anker_text">Загрузка контактов и лица, не являющиеся пользователями</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lang_and_security">
+                        <div class="lang_sel">
+                            <div class="cur_lang">
+                                <span>
+                                    Русский <span class="down_arrow"></span>
+                                </span>
+                            </div>
+                            <select class="select">
+                                <option value="af">Afrikaans</option>
+                                <option value="cs">Čeština</option>
+                                <option value="da">Dansk</option>
+                                <option value="de">Deutsch</option>
+                                <option value="el">Ελληνικά</option>
+                                <option value="en">English</option>
+                                <option value="en-gb">English (UK)</option>
+                                <option value="es">Español (España)</option>
+                                <option value="es-la">Español</option>
+                                <option value="fi">Suomi</option>
+                                <option value="fr">Français</option>
+                                <option value="id">Bahasa Indonesia</option>
+                                <option value="it">Italiano</option>
+                                <option value="ja">日本語</option>
+                                <option value="ko">한국어</option>
+                                <option value="ms">Bahasa Melayu</option>
+                                <option value="nb">Norsk</option>
+                                <option value="nl">Nederlands</option>
+                                <option value="pl">Polski</option>
+                                <option value="pt-br">Português (Brasil)</option>
+                                <option value="pt">Português (Portugal)</option>
+                                <option value="ru">Русский</option>
+                                <option value="sv">Svenska</option>
+                                <option value="th">ภาษาไทย</option>
+                                <option value="tl">Filipino</option>
+                                <option value="tr">Türkçe</option>
+                                <option value="zh-cn">中文(简体)</option>
+                                <option value="zh-tw">中文(台灣)</option>
+                                <option value="bn">বাংলা</option>
+                                <option value="gu">ગુજરાતી</option>
+                                <option value="hi">हिन्दी</option>
+                                <option value="hr">Hrvatski</option>
+                                <option value="hu">Magyar</option>
+                                <option value="kn">ಕನ್ನಡ</option>
+                                <option value="ml">മലയാളം</option>
+                                <option value="mr">मराठी</option>
+                                <option value="ne">नेपाली</option>
+                                <option value="pa">ਪੰਜਾਬੀ</option>
+                                <option value="si">සිංහල</option>
+                                <option value="sk">Slovenčina</option>
+                                <option value="ta">தமிழ்</option>
+                                <option value="te">తెలుగు</option>
+                                <option value="vi">Tiếng Việt</option>
+                                <option value="zh-hk">中文(香港)</option>
+                                <option value="bg">Български</option>
+                                <option value="fr-ca">Français (Canada)</option>
+                                <option value="ro">Română</option>
+                                <option value="sr">Српски</option>
+                                <option value="uk">Українська</option>
+                            </select>    
+                        </div>
+                        <div class="security">© 2023 Instagram from Meta</div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

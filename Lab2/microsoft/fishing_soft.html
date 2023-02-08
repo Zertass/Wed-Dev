@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            margin: auto;
+            max-width: 1920px;
+            font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 400;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            gap: 20rem;
+            font-size: 0.8rem;
+            padding-bottom: 0.7rem;
+        }
+
+        header img {
+            width: 10rem;
+        }
+
+        #microsoft-logo {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            width: 6.5rem;
+            height: 1.4rem;
+        }
+
+        .arrow-icon {
+            width: 2px;
+            margin-left: 1em;
+            margin-bottom: 0.4rem;
+        }
+
+        .avatar-icon {
+            width: 2rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+
+        .search-icon {
+            width: 1.1rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+
+
+        .products span {
+            position: relative;
+            bottom: 10px;
+        }
+
+        #sp1,
+        #sp2 {
+            margin-left: 2rem;
+            margin-right: -0.6rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        nav a {
+            margin-top: 1.4rem;
+        }
+
+        main {
+            display: flex;
+            align-items: stretch;
+            background-image: url(content/notebook.jpg);
+            padding-top: 110px;
+            padding-bottom: 170px;
+            background-repeat: no-repeat;
+            background-position: 70%;
+            background-size: cover;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .main-offer {
+            display: block;
+            flex-direction: column;
+            align-items: left;
+            margin-right: 45rem;
+        }
+
+        .main-offer p {
+            padding-right: 0.5rem;
+            line-height: 1.5rem;
+        }
+
+
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            padding-right: 11.3rem;
+
+        }
+
+        .main-offer {
+            color: white;
+            padding-top: 0;
+            padding-left: 7.8rem;
+        }
+
+        .main-offer img {
+            width: 0.5rem;
+        }
+
+        .invis-btn {
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+        }
+
+        .blue-btn {
+            background-color: #0067b8;
+            color: white;
+            border: none;
+            font-weight: 600;
+            padding: 0.6rem 1rem;
+        }
+
+        .secwrap {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 0.7rem;
+            padding: 110px;
+        }
+
+        .secwrap p {
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        .secwrap a {
+            color: #0067B8;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #262626;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="content/logo.png" id="microsoft-logo">
+            <a href="#">Microsoft 365</a>
+            <a href="#">Office</a>
+            <a href="#">Windows</a>
+            <a href="#">Поддержка</a>
+        </nav>
+        <div class="products">
+            <span>Продукты майкрософт</span>
+            <img class="arrow-icon" src="content/arrow.png">
+            <span id="sp1">Поиск</span>
+            <img class="search-icon" src="content/search.png">
+            <span id="sp2">Войти</span>
+            <img class="avatar-icon" src="content/avatar.png">
+        </div>
+    </header>
+    <main>
+        <div class="main-offer">
+            <h2>Разработано для жизни — сегодня и в будущем</h2>
+            <p>Следующее поколение игр. Ваши цели. Друзья и семья. С<br> Windows 11 вы станете еще ближе к тому,
+            что
+            успели<br>
+            полюбить.</p>
+            <button class="blue-btn">Проверьте, готов ли ваш ПК</button>
+        </div>
+    </main>
+    <div class="secwrap">
+        <footer>
+            <img src="content/1.webp" width="310rem">
+            <h3>Microsoft 365</h3>
+            <p>Приложения и функции, которые помогут<br> вам воплотить идеи в реальность,<br> оставаться в безопасности и<br> сосредоточиться на важных вещах в жизни. </p>
+            <a href="#">Для 1 человека ></a>
+            <a href="#" style="margin-left: 2rem ;">До 6 человек ></a>
+        </footer>
+        <footer class="section">
+            <img src="content/2.webp">
+            <h3>Microsoft Edge</h3>
+            <p>Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных
+                возможностей.
+            </p>
+            <a href="#">Скачать ></a>
+        </footer>
+        <footer class="section">
+            <img src="content/3.webp">
+            <h3>Microsoft OneDrive</h3>
+            <p>Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где
+                угодно.</p>
+            <a href="#">Подробнее ></a>
+        </footer>
+        <footer class="section">
+            <img src="content/4.webp">
+            <h3>OneNote</h3>
+            <p>Приведите свои заметки и дела в порядок.</p>
+            <a href="#">Узнать больше ></a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
