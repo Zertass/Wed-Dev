@@ -1,0 +1,54 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <div
+    *ngIf="
+      category !== undefined &&
+      (category.listOfProducts.indexOf(product.id) !== -1 || category.id === 0)
+    "
+  >
+    <h3>
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]"
+      >
+        {{ product.name }}
+      </a>
+    </h3>
+    <h5>{{ 'likes: ' + product.rating }}</h5>
+
+    <div>
+      <img src="{{ product.photo }}" alt="photo" />
+      <p *ngIf="product.description">
+        <ng-container *ngFor="let line of product.description.split('\n')">
+          {{ line }}<br />
+        </ng-container>
+      </p>
+    </div>
+
+    <button type="button" (click)="share()" style="padding: 0">
+      <a
+        href="https://telegram.me/share/url?url={{ product.kaspiLink }}"
+        target="_blank"
+        style="color: #fff; padding: 8px 16px"
+        >Share
+      </a>
+    </button>
+
+    <app-product-alerts [product]="product" (notify)="onNotify()">
+    </app-product-alerts>
+
+    <button class="fancy-button" (click)="product.rating = product.rating + 1">
+      Like
+    </button>
+    <button class="fancy-button" (click)="remove(product)">
+      Remove product
+    </button>
+  </div>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

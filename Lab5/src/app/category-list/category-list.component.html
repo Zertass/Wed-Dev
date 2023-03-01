@@ -1,0 +1,14 @@
+<h2>Choose your category</h2>
+<div class="container">
+  <div class="category-card" *ngFor="let category of categories">
+    <h5>
+      <a [title]="category.name" [routerLink]="['/category', category.id]">
+        {{ category.name }}
+      </a>
+    </h5>
+
+    <div>
+      <img src="{{ category.imageLink }}" alt="photo" width="90px" />
+    </div>
+  </div>
+</div>
