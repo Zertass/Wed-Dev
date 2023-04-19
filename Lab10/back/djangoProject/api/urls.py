@@ -7,7 +7,7 @@ from .views import *
 urlpatterns = [
     path('', views.index, name='index'),
     # path('login/', obtain_jwt_token),
-    path('companies/', CompanyList.as_view()),
+    path('companies/', company_list),
     path('companies/<int:pk>/', CompanyByID.as_view()),
     path('companies/<int:company_id>/vacancies', VacancyListByCompanyID.as_view()),
     path('vacancies/', VacancyList.as_view()),

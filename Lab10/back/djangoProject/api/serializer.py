@@ -8,6 +8,16 @@ class CompanySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class CompanyCreateSerializer(serializers.Serializer):
+    name = serializers.CharField(max_length=200)
+    description = serializers.CharField(max_length=200, required=False, allow_blank=True, default="")
+    city = serializers.CharField(max_length=200)
+    address = serializers.CharField(max_length=200, required=False, allow_blank=True, default="")
+
+    def create(self, validated_data):
+        return Company.objects.create(**validated_data)
+
+
 class VacancySerializer(serializers.ModelSerializer):
     company_id = serializers.IntegerField(write_only=True)
     company = CompanySerializer(read_only=True)
