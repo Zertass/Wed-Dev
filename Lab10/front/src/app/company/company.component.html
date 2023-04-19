@@ -1,0 +1,13 @@
+<h1>Companies list</h1>
+
+<ul>
+  <li *ngFor="let c of companies">
+    <div class="company-card" (click)="toVacancies(c.id)">
+        <div class="card id">{{c.id}}</div>
+        <h2>name: {{c.name}}</h2>
+        <p>{{c.description}}</p>
+        <h3>City: {{c.city}}</h3>
+        <h3>address: {{c.address}}</h3>
+    </div>
+  </li>
+</ul>
